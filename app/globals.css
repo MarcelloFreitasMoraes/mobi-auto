@@ -1,11 +1,5 @@
-:root {
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
-  --text-color: #333;
+:root { 
   --background-color: #f0f0f0;
-  --white: #ffffff;
-  --black: #333333;
-  --background-button: rgb(93 0 191);
   --font-roboto: "Roboto", sans-serif;
 }
 

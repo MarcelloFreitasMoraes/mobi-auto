@@ -4,7 +4,6 @@ import { Box, Card, Chip, Typography } from "@mui/material";
 import Container from "@mui/material/Container";
 import Link from "next/link";
 import React from "react";
-import theme from "../styles/theme";
 
 const Result: React.FC<ResultProps> = async ({ searchParams }) => {
   const { mark, model, year } = await searchParams;
@@ -25,7 +24,7 @@ const Result: React.FC<ResultProps> = async ({ searchParams }) => {
       <Card
         variant="outlined"
         sx={{
-          backgroundColor:  theme.palette.secondary.light,
+          backgroundColor: 'rgb(220 245 242)',
           padding: 15,
           borderRadius: "10px",
         }}
@@ -43,8 +42,8 @@ const Result: React.FC<ResultProps> = async ({ searchParams }) => {
           <Chip
             label={yearData.Valor}
             sx={{
-              backgroundColor: theme.palette.secondary.main,
-              color: theme.palette.primary.light,
+              backgroundColor: 'rgb(46 204 113)',
+              color: '#FFFFFF',
               fontWeight: 700,
               fontSize: "18px",
               marginTop: "10px",

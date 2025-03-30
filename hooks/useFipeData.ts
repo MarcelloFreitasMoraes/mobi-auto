@@ -2,9 +2,7 @@
 import { fetchData } from "@/service/get-fipe";
 import { baseUrl } from "@/service/https";
 
-export const fetchFipe = async () => {
-  console.log("Fetching FIPE data...");
-  
+export const fetchFipe = async () => { 
   const url = `${baseUrl}/carros/marcas`;
   return fetchData(url);
 };
