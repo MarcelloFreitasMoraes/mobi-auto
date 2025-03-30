@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mobiauto 🚀
 
-## Getting Started
+**Mobiauto** é uma aplicação construída com **Next.js 15** que exibe tabela fipe de carros, utilizando **Server-Side Rendering (SSR)** para otimizar a experiência de carregamento e renderização das páginas.
 
-First, run the development server:
+A aplicação utiliza várias bibliotecas e tecnologias modernas, incluindo **react-hook-forms**, **Next.js 15**, **TypeScript** e **Material Ui**.
+
+## 📦 Tecnologias Utilizadas
+
+- **Next.js 15** – Framework React para renderização do lado do servidor e construção de páginas dinâmicas.
+- **React Hook Form ** – Biblioteca para gerenciamento eficiente de formulários no React.
+- **TypeScript** – Para garantir segurança de tipos durante o desenvolvimento.
+- **Material UI**  – Conjunto de componentes React para construção de interfaces modernas e acessíveis.
+
+## Páginas
+
+### 1. **Página de Tabela Fipe**
+
+A primeira página da aplicação exibe a lista de **Tabela de dados do veículo** obtidos de uma API externa. A API utilizada para essa funcionalidade é a seguinte:
+
+- ## 🌐 API de Tabela Fipe:
+  - Endpoint: [API - Tabela Fipe](https://parallelum.com.br/fipe/api/v1/carros/marcas)
+  - Esta API retorna uma lista de automóveis disponíveis.
+
+### 2. **Página Automóvel e Preço**
+
+Quando uma Marca, modelo e ano do automóvel é selecionado na página inicial, o usuário é redirecionado para uma página que exibe o veículo. A API usada para essa funcionalidade é a seguinte:
+
+- ## 🌐 API de Veículos, Marca, Modelo e Ano:
+  - Endpoint: [NYT API - Tabela Fipe](https://parallelum.com.br/fipe/api/v1/carros/marcas/59/modelos/5940/anos/2014-3)
+  - Esta API retorna a Marca, modelo, ano e valor do veículo.
+
+  - **Gerenciamento de Estado**:
+   - Utilização do Server Side Rendering (SSR) e Server Actions do Next.js para buscar e processar dados diretamente no servidor, garantindo melhor desempenho e SEO.
+
+- **Responsividade**:
+   - O layout é totalmente responsivo, adaptando-se a diferentes tamanhos de tela usando **Material UI**.
+
+
+## ⚙️ Como Rodar o Projeto
+
+1. Clone este repositório:
+
+```bash
+https://github.com/MarcelloFreitasMoraes/mobi-auto.git
+```
+
+2. Acesse o diretório do projeto:
+
+```bash
+cd mobi-auto
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+4. Rode o projeto localmente: 
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5.  Abra o navegador e acesse:  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+http://localhost:3000/
+```
