@@ -7,7 +7,7 @@ A aplicação utiliza várias bibliotecas e tecnologias modernas, incluindo **re
 ## 📦 Tecnologias Utilizadas
 
 - **Next.js 15** – Framework React para renderização do lado do servidor e construção de páginas dinâmicas.
-- **React Hook Form ** – Biblioteca para gerenciamento eficiente de formulários no React.
+- **React Hook Form** – Biblioteca para gerenciamento eficiente de formulários no React.
 - **TypeScript** – Para garantir segurança de tipos durante o desenvolvimento.
 - **Material UI**  – Conjunto de componentes React para construção de interfaces modernas e acessíveis.
 
