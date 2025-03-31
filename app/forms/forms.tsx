@@ -4,7 +4,6 @@ import { Button, Card, Container, Grid, Typography } from "@mui/material";
 import { FormsProps, FormData } from "@/@types/forms";
 import { CustomController } from "../../components/custom-controller";
 import { useRouter } from "next/navigation";
-import theme from "../styles/theme";
 
 const Forms: React.FC<FormsProps> = ({ data, mark = "", model = "" }) => {
   const router = useRouter();
@@ -152,8 +151,8 @@ const Forms: React.FC<FormsProps> = ({ data, mark = "", model = "" }) => {
                 onClick={handleClickRoute}
                 disabled={!selectedMark || !selectedModel || !watch("year")}
                 sx={{
-                  backgroundColor: theme.palette.primary.dark,
-                  color: theme.palette.background.paper,
+                  backgroundColor: 'primary.dark',
+                  color: 'background.paper',
                   fontSize: "14px",
                   width: { xs: "100%", md: "200px" },
                   marginTop: "10px",

@@ -24,7 +24,7 @@ const Result: React.FC<ResultProps> = async ({ searchParams }) => {
       <Card
         variant="outlined"
         sx={{
-          backgroundColor: 'rgb(220 245 242)',
+          backgroundColor: 'secondary.light',
           padding: 15,
           borderRadius: "10px",
         }}
@@ -42,8 +42,8 @@ const Result: React.FC<ResultProps> = async ({ searchParams }) => {
           <Chip
             label={yearData.Valor}
             sx={{
-              backgroundColor: 'rgb(46 204 113)',
-              color: '#FFFFFF',
+              backgroundColor: 'secondary.dark',
+              color: 'primary.light',
               fontWeight: 700,
               fontSize: "18px",
               marginTop: "10px",
